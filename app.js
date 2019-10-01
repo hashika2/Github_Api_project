@@ -16,9 +16,10 @@ searchUser.addEventListener('keyup',(e)=>{
         //make http call
         github.getUser(userText)
         .then(data=>{
-            console.log(data);
-           if(data.profile.message===''){
+           // console.log(data);
+           if(data.profile.message==='Not Found'){
                //show alert
+               ui.showAlert('User not found','alert alert-danger');
            }
            else{
                //show profile
@@ -27,5 +28,6 @@ searchUser.addEventListener('keyup',(e)=>{
         })
     }else{
         //clear profile
+        ui.clearProfile();
     }
 });
