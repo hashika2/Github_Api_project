@@ -45,8 +45,8 @@ class UI {
           </div>
           <div class="col-md-6">
           <span class="badge badge-primary">Stars: ${repo.stargazers_count}</span>
-          <span class="badge badge-secondary">Watches: ${repo.watches_count}</span>
-          <span class="badge badge-success">Forks: ${repo.forms_count}</span> 
+          <span class="badge badge-secondary">Watchers: ${repo.watchers_count}</span>
+            <span class="badge badge-success">Forks: ${repo.forms_count}</span>
           </div>
         </div>
       </div>`;
